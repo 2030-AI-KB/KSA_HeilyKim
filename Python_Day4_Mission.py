@@ -74,7 +74,7 @@ print( "입력한 성적중 "+ str(min_index) + "번째 점수가 가장 낮은 
 #Mission_5. 아래의 Song의 내용을 분석할 수 있는 코드를 작성하여 정량적 수치를 통해 의견을 작성해주세요..
 
 # [의견 작성]
-#
+# 몰라용
 
 
 song = """Fuck you and your mom and your sister and your job and your broke ass car and that shit you call art
@@ -82,7 +82,7 @@ song = """Fuck you and your mom and your sister and your job and your broke ass 
        now you're texting all my friends asking questions hey never even liked you in the first place"""
 song2 = song.lower()
 song2.count('fuck')
-song2.
+
 
 
 # In[17]:
