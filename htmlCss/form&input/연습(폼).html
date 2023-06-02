@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SIGNUP YO</title>
+    <link rel="stylesheet" href="연습(폼).css">
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form>
+        <br>
+        <h2>환영합니다</h2>
+        <label for="Fname">Your first name</label>
+        <br>
+        <input type="text" name="Fname">
+        <br>
+        <label for="Lname">Your last name</label>
+        <br>
+        <input type="text" name="Lname">
+        <br><br>
+        <label for="gender">Your gender</label>
+        <br>
+        <select name="gender">
+            <option value="0">SELECT YOUR GENDER</option>
+            <option value="F">F</option>
+            <option value="M">M</option>
+            <option value="ETC">ETC</option>
+            <option value="NA">PREFER NOT TO SAY</option>
+        </select>
+        <br><br>
+        <label for="dob">Your DoB</label>
+        <br>
+        <input type="date" name="dob">
+        <br><br>
+        <lable for="email">Your email</lable>
+        <br>
+        <input type="email" name="email">
+        <br><br>
+        <lable for="phone">Your phone</lable>
+        <br>
+        <input type="text" name="phone">
+        <br><br>
+        <lable for="cat" id="cat">*DO YOU HAVE A CAT?</lable>
+        <br>
+        <input type="checkbox" name="cat" value="Y">
+        <label for="Y">YES!</label>
+        <input type="checkbox" name="cat" value="N">
+        <label for="N">No....</label>
+        <br><br>
+        <p>Anything else?</p>
+        <textarea name="MSG" rows="4" cols="50"></textarea>
+        <br><br>
+        <input type="submit">
+        <br><br>
+    </form>
+</body>
+</html>

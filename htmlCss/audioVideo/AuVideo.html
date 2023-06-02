@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>애옹</title>
+</head>
+<style>
+
+</style>
+<body>
+    <p>비디오 불러오기</p>
+    <video width="500" height="300" autoplay muted> <!--control: 재생버튼 autoplay muted: 자동재생(음소거)-->
+        <source src="KakaoTalk_20230421_100231232.mp4" type="video/mp4">
+        애옹이 비디오이다<!--동영상 지원 안될때 띄우는 문구-->
+    </video>
+    <br>
+    <p>유튭영상 불러오기(link)</p> <!--link뒤에+ "?autoplay=1&mute=1" 자동재생-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5J7E7huNvNY?autoplay=1&mute=1">
+    </iframe>
+    <p>오디오 불러오기</p>
+    <audio controls>
+        <source src="야.mp3" type="audio/mp3">
+        야 오디오이다.
+    </audio>
+</body>
+</html>
