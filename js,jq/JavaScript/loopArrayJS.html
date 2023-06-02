@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //조건문: if-else, switch
+        //반복문: while, for, do-while, for in, for of
+        //break, continue
+
+        //배열: 여러 값을 갖는 공간(모든 같은 타입의 정보일 필요 x)
+        let introduce=["김상",25,"여","O형",true];
+        let intro2=Array("김상",25,"여","O형",true);
+        let intro3=new Array("김상",25,"여","O형",true);
+        document.write("이름: "+introduce[0]+"<br>");
+        document.write("나이: "+introduce[1]+"<br>");
+        document.write("성별: "+introduce[2]+"<br>");
+        document.write("혈액형: "+introduce[3]+"<br>");
+        
+        let student=[];  //값은 없이 선언만 함 *배열명.length  => 길이구하기
+        //값 삽입
+            //1. 배열명[값을 넣을 인덱스] = value
+            student[0]="또첸"
+            //2. 배열명.push(value)
+            student.push(20);
+            document.write(student[1]+"<br>")
+        //값 삭제 delete
+            delete student[0]
+            document.write(student[0])
+
+</script>
+</body>
+</html>
