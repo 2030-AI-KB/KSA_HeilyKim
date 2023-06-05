@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 반응형 웹 설계 시, 뷰 포트 명시된 meta 태그 포함시켜야 함 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heheh</title>
+    <!-- viewport: 브라우저 창의 크기 -->
+</head>
+<style>
+    img{
+        /* width: 50%; img 태그의 너비를 viewpoint 너비의 70%만큼 차지하게끔 함(한도X) */
+        max-width: 70%;  /*img 태그의 너비를 viewpoint 너비의 70%만큼 차지하게끔 함(원본 사진이 최대크기)*/
+        /* min-width: 50% // 최소값은 지정된 값이나 원본의 값을 따른다(원본 사진이 최소크기) */
+    }
+</style>
+<body>
+    <!-- <img src="https://uploads.dailydot.com/2018/10/Screen-Shot-2018-10-08-at-10.58.22-AM.png?auto=compress&fm=png"> -->
+
+    <!-- viewpoint 크기에 따라, 다른 사진을 보여주게끔 설정 -->
+    <picture>
+        <!-- srcset: 이미지들을 2개 이상 명시하여 묶어놓는 속성 -->
+        <source srcset="https://gifdb.com/images/thumbnail/shocked-emotional-teary-eyed-cat-crying-d9v3q55x3do4lk6z.gif"
+        media="(max-width:1000px)">
+        <source srcset="https://ih1.redbubble.net/image.3236696297.4896/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+        media="(max-width:1500px)">
+        <source srcset="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/164719801/original/419251e95b26ea2594bcee9b61aa215bad7e8c8f/paint-your-pet-as-the-cryig-cat-meme.jpg">
+        <img> <!--이미지 공간 배정만 하는 용도-->
+    </picture>
+</body>
+</html>ㄴ

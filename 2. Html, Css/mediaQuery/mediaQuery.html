@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQuery</title>
+</head>
+<style>
+    /* 미디어쿼리: 특정 조건이 참인 경우, 미디어쿼리 양식에 있는 속성값 적용 */
+    /* 생성 
+    @media screen and (조건문) {
+        "조건문이 참일 때 적용할 스타일"
+        선택자{속성명:속성값;}
+    }
+    */
+    body{
+        background-color: blanchedalmond;
+    }
+    /* min-width이 더 안정적임 */
+    @media screen and (max-width:500px) {   /*vp 너비가 ~500이하일때 이 컬러*/
+        body{
+            background-color: cornflowerblue;
+        }
+    }
+    @media screen and (min-width:500px) {   /*vp 너비가 500~이상일때 이 컬러*/
+        body{
+            background-color: darkseagreen;
+        }
+    }
+    /*@media screen and (orientation: portrait) { /*화면이 세로모드일때
+        body{ background-color: brown;    /*landscape:가로 모드
+        }   
+    }*/
+</style>
+<body>
+    
+</body>
+</html>

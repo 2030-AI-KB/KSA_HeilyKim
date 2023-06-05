@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FORM2</title>
+    <!-- rel: 어떤 형식의 파일을 가져오는지 명시 -->
+    <!-- href: 무슨 파일을 가져오는지 명시 -->
+    <link rel="stylesheet" href="css기초.css">
+</head>
+<body>
+    <!--사용자 입력을 위한 태그-->
+    <!--action: 입력값들을 "어디로" 전송할지 지정하는 속성-->
+        <!-- ex) url링크, 이동할 파일html  -->
+    <!--method: get, post 둘 중 하나만 작성할 수 있는 속성-->
+         <!-- ex) get, post 모두 함수(method)  -->
+         <!-- get: 서버가 클라이언트(사용자)로부터 정보 요청할 때 사용 -->
+         <!-- post: 서버에 정보를 보낼 때 사용 -->
+    <p>input 태그의 종류</p>
+    <form> 
+        <label for="email">Email: </label>
+        <input type="text" id="f_mail" name="f_mail" style="width:
+        100px"> @
+        <!-- id: 접근시 사용할 이름; name: 실질적인 변수 이름 -->
+        <select id="sec_email" name="sec_email" style="height:20px">
+            <option>naver.com</option>
+            <option>daum.com</option>
+            <option>google.com</option>
+        </select>
+        <br><br>
+        <label>버튼 생성</label>
+        <button>내는 tag로 만든 버튼이다</button>
+        <input type="button" value="내는 input으로 만든 버튼이다">
+        <br><br>
+        <label>날짜</label>
+        <input type="date" style="width:150px">
+        <br><br>
+        <label>색상지정</label>
+        <input type="color" style="width:150px">
+        <br><br>
+        <label>비밀번호 입력</label>
+        <input type="password" style="width:150px">
+        <br><br>
+        <label for="use">개인정보 유효기간</label>
+        <input type="radio" id="three_month" name="use" value="three_month">
+        <label for="three_month">3개월</label>
+        <input type="radio" id="six_month" name="use" value="six_month">
+        <label for="six_month">6개월</label>
+        <input type="radio" id="one_year" name="use" value="one_year">
+        <label for="one_year">1년</label>
+        <br><br>
+        <label for="hobby">취미</label>
+        <input type="checkbox" id="sleep" name="hobby" value="sleep">
+        <label for="sleep">숙면</label>
+        <input type="checkbox" id="jogging" name="hobby" value="jogging">
+        <label for="jogging">조깅</label>
+        <input type="checkbox" id="cooking" name="hobby" value="cooking">
+        <label for="cook">요리</label>
+        <br><br>
+
+        <input type="file">
+    </form>
+</body>
+</html>

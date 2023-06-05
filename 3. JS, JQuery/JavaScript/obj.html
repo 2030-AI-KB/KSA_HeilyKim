@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objJS</title>
+</head>
+<body>
+    <script>
+        //배열 선언 및 초기화
+        //let/const 배열명 = [요소1, 요소2]
+        let student = ['상아',25,'F'];
+
+        //객체: 실생활에서 파악 가능한 사물 또는 실체(클래스 개념X)
+            //-> 객체의 구성(2가지): 메소드(함수), 필드(변수)        
+            //구현 1:
+            // let/const obj = {
+            //     필드명: 필드값,
+            //     메소드명: function(){
+            //         실행할 명령문
+            //     },
+            //      ...
+            // }
+        let student2 = {
+            name: '상아',
+            age: 25,
+            blood: 'O',
+            Print: function(){     //이름이 print인 함수 선언
+                document.write("name:"+this.name+" age:"+this.age+" blood:"+this.blood);
+            }                      //this 안 쓰면 객체 밖에서 찾음
+        }
+            //객체 멤버에 접근하는 방법
+            //필드접근: [객체명].[필드명];
+        student2.blood='AB';
+        student2["age"]=22;
+            //메소드 접근: [객체명].[메소드명];
+        student2.Print();
+            //메소드 제거: delete[멤버 접근];
+        delete student2.blood;
+        document.write("<br>blood type is "+student2.blood);
+        
+        //구현 2:
+        // let/const 객체명 = new 생성자명;
+        let day=new Date();
+        console.log(day.getFullYear());  //js 상에서 이미 구현된 생성자 이용해서 객체 생성
+        let birth=new Object();  //객체인 점만 선언
+        birth.year=1999;
+        birth.month=7;
+        birth.day=30; //구현 1이랑 같음
+        //구현 3:
+        //Object.create() 이용
+    </script>
+</body>
+</html>

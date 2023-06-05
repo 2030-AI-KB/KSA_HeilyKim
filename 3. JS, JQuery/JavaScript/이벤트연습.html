@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        margin: 5px;
+    }
+    input{
+        margin: 5px;
+    }
+</style>
+<body>
+    <label for="name">이름: </label>
+    <input type="text" id="name"><br>
+    <label for="age">나이: </label>
+    <input type="text" id="age"><br>
+    <label for="gender">성별: </label>
+    <input type="text" id="gender"><br>
+    <button id="btn">난 버튼</button>
+    <p id="text"></p> <!--결과값 나올 공간-->
+    <script>
+        let button=document.getElementById("btn").addEventListener("click",click)
+        function click(){
+            let n = document.getElementById("name").value;
+            let g = document.getElementById("gender").value;
+            let a = document.getElementById("age").value;
+            alert("입력 ㄳ")
+            document.getElementById("text").innerHTML=
+            `<hr>
+            이름: ${n}<br>
+            나이: ${a}<br>
+            성별: ${g}<br>
+            `;
+        }
+
+
+    </script>
+</body>
+</html>
