@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    div{
+        text-align: center;
+        margin: 0 auto;
+    }
+    p{
+        background-color: white;
+        border: 3px black solid;
+        display: inline-block;
+        height: 200px;
+        padding: 5px 25px;
+        transition: background-color 2s, height 2s, font-size 2s, color 2s;
+        transition-timing-function: ease-out;
+        transition-delay: 1s;
+    }
+    #red:hover{
+        background-color: red;
+    }
+    #orange:hover{
+        background-color: orange;
+    }
+    #yellow:hover{
+        background-color: yellow;
+    }
+    #green:hover{
+        background-color: green;
+    }
+    #skyBlue:hover{
+        background-color: skyblue;
+    }
+    #purple:hover{
+        background-color: purple;
+    }
+    #blue:hover{
+        background-color: blue;
+    }
+    p:active{
+        font-size: larger;
+        color: white;
+        height: 250px;
+    }
+</style>
+<body>
+    <div>
+        <h2>음계를 눌러봐라</h2>
+        <p id="red">도</p>
+        <p id="orange">레</p>
+        <p id="yellow">미</p>
+        <p id="green">파</p>
+        <p id="blue">솔</p>
+        <p id="skyBlue">라</p>
+        <p id="purple">시</p>
+        <p id="red">도</p>
+    </div>
+</body>
+</html>
